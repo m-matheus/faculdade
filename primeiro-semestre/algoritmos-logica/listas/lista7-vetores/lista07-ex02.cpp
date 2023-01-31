@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <locale.h>
 
-int main()
-{
-	setlocale(LC_ALL, "Portuguese");
-    
-	int num[10], num2[10], i;
-	
-	printf("Digite 10 números: \n");
-    for(i=0;i<=9;i++)
-    	scanf("%i", &num[i]);
-	for(i=0;i<=9;i++) {
-		num2[i] = num[i] * num[i];
-		printf("O número digitado é %d e o seu quadrado é %d\n", num[i], num2[i]);
-	}
-    
+int main(void) {
+    int i, numeros[10];
 
+    for (i = 0; i < 10; i++) {
+        printf("Digite um numero: ");
+        scanf("%d", &numeros[i]);
+    }
+
+    printf("Numeros maiores que 50: ");
+    for (i = 0; i < 10; i++) {
+        if (numeros[i] > 50) {
+            printf("%d ", numeros[i]);
+        }
+    }
+    printf("\n");
     return 0;
 }
