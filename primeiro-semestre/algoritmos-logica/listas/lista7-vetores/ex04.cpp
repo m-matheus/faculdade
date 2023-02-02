@@ -1,21 +1,13 @@
 #include <stdio.h>
-#include <locale.h>
 
-int main()
-{
-	setlocale(LC_ALL, "Portuguese");
-    
-	int vet[10], i, soma=0;
-	
-	printf("Digite 10 números: \n");
-    for(i=0;i<=9;i++) {
-		scanf("%i", &vet[i]);
-		soma= soma + vet[i];
-		}
-	for(i=0;i<=9;i++) {
-		printf("%i\t", vet[i]);
-	}
-    printf("\nTotal= %d\n", soma);
-
+int main() {
+    int A[10], i, soma=0;
+    for (i=0; i<10; i++) {
+        printf("Insira o %dº valor: ", i+1);
+        scanf("%d", &A[i]);
+        soma += A[i];
+    }
+    printf("A soma dos valores é: %d\n", soma);
     return 0;
 }
+
