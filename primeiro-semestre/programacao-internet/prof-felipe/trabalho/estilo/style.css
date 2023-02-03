@@ -24,7 +24,6 @@
 body {
     background-color: var(--color2);
     font-family: var(--fontePadrao);
-    color: #466337;
 }
 
 
@@ -70,9 +69,8 @@ nav a:hover {
     transition: .25s;
 }
 
-
 main {
-    padding: 15px;
+    padding: 20px;
 }
 
 
