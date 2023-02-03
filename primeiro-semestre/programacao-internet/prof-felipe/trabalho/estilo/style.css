@@ -1,12 +1,18 @@
+@media screen and (max-width: 768px) {
+    .buttonHeaderNav {
+        display: block;
+    }
+}
+
 :root {
     --color0:white;
-    --color1:#F0E6AB;
-    --color2:#F0D17F;
-    --color3:#89B173;
-    --color4:#194431;
-    --color5:#11393B;
+    --color1:#D3FCBD;
+    --color2:#89B173;
+    --color3:#466337;
+    --color4:#B072B0;
+    --color5:#632D63;
 
-    --fontePadrao: ;
+    --fontePadrao: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -16,8 +22,8 @@
 
 
 body {
-    background-color: var(--color5);
-    
+    background-color: var(--color2);
+    font-family: var(--fontePadrao);
 }
 
 
@@ -27,13 +33,19 @@ body {
     width: 100%;
     padding: 10px;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--color4), var(--color5));
+    background-image: linear-gradient(to bottom, var(--color3), var(--color2));
 }
+.buttonHeaderNav {
+    background-color: transparent;
+    border: none;
+    color: var(--color0);
+    cursor: pointer;
+    
+}
+
+
 header {
     width: 50%;
-}
-header img {
-    width: 100px;
 }
 
 
@@ -42,9 +54,42 @@ nav {
     text-align: end;
 }
 nav a {
-    padding: 20px;
+    margin-right: 20px;
+    padding: 8px 10px;
     color: var(--color0);
     text-decoration: none;
     font-weight: bold;
+    background-color: var(--color5);
+    border-radius: 7px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.459);
+}
+nav a:hover {
+    background-color: var(--color4);
+    text-decoration: underline;
+    transition: .25s;
+}
+
+
+main {
+    padding: 15px;
+}
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+
 }
 
