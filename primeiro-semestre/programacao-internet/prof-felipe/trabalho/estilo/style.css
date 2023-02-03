@@ -34,6 +34,7 @@ body {
     padding: 10px;
     align-items: center;
     background-image: linear-gradient(to bottom, var(--color3), var(--color2));
+    
 }
 .buttonHeaderNav {
     background-color: transparent;
@@ -50,12 +51,11 @@ header {
 
 
 nav {
-    width: 50%;
-    text-align: end;
+    
+    
 }
 nav a {
-    margin-right: 20px;
-    padding: 8px 10px;
+    padding: 10px;
     color: var(--color0);
     text-decoration: none;
     font-weight: bold;
