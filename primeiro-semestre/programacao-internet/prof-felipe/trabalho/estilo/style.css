@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+:root {
+    --cor0:white;
+    --cor1:#30A5BF;
+    --cor2:#185359;
+    --cor3:#0B2B40;
+    --cor4:#F2BE22;
+    --cor5:#A6874E;
+
+    --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonteDestaque: 'Mukta', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--fontePadrao);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2));
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+header img, h1 {
+    margin: auto;
+    text-align: center;
+}
+header img {
+    padding-top: 15px;
+}
+header h1 {
+    font-family: var(--fonteDestaque);
+    color: var(--cor0);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.466);
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+
+nav {
+    background-color: var(--cor3);
+    min-height: 80px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.nav-list li {
+    padding: 20px;
+    align-items: center;
+}
+nav a {
+    background-color: var(--cor5);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.521);
+}
+nav a:hover {
+    background-color: var(--cor4);
+}
+
+
+main {
+    background-color: var(--cor1);
+    padding: 25px;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+main h1 {
+    font-family: var(--fonteDestaque);
+    font-size: 2em;
+    color: var(--cor0);
+}
+main h2 {
+    padding: 15px;
+}
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+
+}
+
+
+
+footer {
+    background-color: var(--cor3);
+    color: var(--cor0);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+footer p {
+    padding-top: 7px;
+}
+footer a:hover {
+    color: var(--cor1);
+}
