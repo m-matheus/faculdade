@@ -27,12 +27,8 @@ body {
     width: 100%;
     padding: 10px;
     align-items: center;
-<<<<<<< HEAD
     background-image: linear-gradient(to bottom, var(--color3), var(--color2));
     
-=======
-    background-image: linear-gradient(to bottom, var(--color4), var(--color5));
->>>>>>> parent of 99b2e31 (final dia 02)
 }
 header {
     width: 50%;
@@ -47,11 +43,7 @@ nav {
     
 }
 nav a {
-<<<<<<< HEAD
     padding: 10px;
-=======
-    padding: 20px;
->>>>>>> parent of 99b2e31 (final dia 02)
     color: var(--color0);
     text-decoration: none;
     font-weight: bold;
