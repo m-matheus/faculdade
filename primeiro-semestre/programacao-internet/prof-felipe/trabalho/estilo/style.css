@@ -1,0 +1,50 @@
+:root {
+    --color0:white;
+    --color1:#F0E6AB;
+    --color2:#F0D17F;
+    --color3:#89B173;
+    --color4:#194431;
+    --color5:#11393B;
+
+    --fontePadrao: ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: var(--color5);
+    
+}
+
+
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--color4), var(--color5));
+}
+header {
+    width: 50%;
+}
+header img {
+    width: 100px;
+}
+
+
+nav {
+    width: 50%;
+    text-align: end;
+}
+nav a {
+    padding: 20px;
+    color: var(--color0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
