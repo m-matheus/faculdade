@@ -3,11 +3,12 @@
 
 :root {
     --cor0:white;
-    --cor1:#30A5BF;
-    --cor2:#185359;
-    --cor3:#0B2B40;
-    --cor4:#F2BE22;
-    --cor5:#A6874E;
+    --cor1:#f2e4a3;
+    --cor2:#ffc7c8;
+    --cor22:#b89293;
+    --cor3:#bcf7f3;
+    --cor4:#534842;
+    --cor5:#27221f;
 
     --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
     --fonteDestaque: 'Mukta', cursive;
@@ -27,7 +28,7 @@ a {
 }
 
 header {
-    background-image: linear-gradient(to top, var(--cor3), var(--cor2));
+    background-image: linear-gradient(to top, var(--cor22), var(--cor2));
     justify-content: center;
     align-items: center;
     display: flex;
@@ -52,7 +53,7 @@ header h1 {
 
 
 nav {
-    background-color: var(--cor3);
+    background-color: var(--cor22);
     min-height: 80px;
 }
 nav ul {
