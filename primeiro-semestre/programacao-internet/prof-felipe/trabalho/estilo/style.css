@@ -29,49 +29,26 @@ a {
 
 header {
     background-color: var(--cor1);
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     display: flex;
-}
-
-header img {
+    align-items: center;
+    justify-content: space-between;
     padding-top: 15px;
 }
-header h1 {
+.logo {
+    text-align: center;
     font-family: var(--fonteDestaque);
-    color: var(--cor0);
-    font-size: 2.5em;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.466);
-    padding-bottom: 25px;
 }
-
 
 
 nav {
-    background-color: var(--cor22);
-    min-height: 80px;
-    display: flex;
+    background-color: var(--cor2);
+    margin-right: 15px;
 }
-nav ul {
-    display: flex;
+.nav-list {
     list-style: none;
-    justify-content: center;
-    align-items: center;
+    padding-right: 15px;
 }
-.nav-list li {
-    padding: 20px;
 
-}
-nav a {
-    background-color: var(--cor5);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.521);
-}
-nav a:hover {
-    background-color: var(--cor4);
-}
 
 
 main {
