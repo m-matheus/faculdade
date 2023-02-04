@@ -28,16 +28,13 @@ a {
 }
 
 header {
-    background-image: linear-gradient(to top, var(--cor22), var(--cor2));
-    justify-content: center;
+    background-color: var(--cor1);
+    justify-content: space-between;
     align-items: center;
-    display: flex;
     flex-direction: column;
+    display: flex;
 }
-header img, h1 {
-    margin: auto;
-    text-align: center;
-}
+
 header img {
     padding-top: 15px;
 }
@@ -46,7 +43,6 @@ header h1 {
     color: var(--cor0);
     font-size: 2.5em;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.466);
-    text-align: center;
     padding-bottom: 25px;
 }
 
@@ -55,15 +51,17 @@ header h1 {
 nav {
     background-color: var(--cor22);
     min-height: 80px;
+    display: flex;
 }
 nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
+    align-items: center;
 }
 .nav-list li {
     padding: 20px;
-    align-items: center;
+
 }
 nav a {
     background-color: var(--cor5);
