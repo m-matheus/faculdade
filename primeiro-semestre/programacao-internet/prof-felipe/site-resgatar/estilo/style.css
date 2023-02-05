@@ -94,6 +94,19 @@ main {
     height: 1100px;
 }
 
+main a {
+    text-decoration: none;
+    color: var(--cor2-2);
+    font-weight: bold;
+}
+main a:hover {
+    color: var(--cor2);
+}
+.subtitulo-home {
+    margin: auto;
+    text-indent: 30px;
+}
+
 .conteudo-principal {
     display: flex;
     flex-direction: row;
@@ -164,4 +177,8 @@ footer p {
 
 button i {
     font-size: 25px;
+}
+
+button a {
+    color: var(--cor0);
 }
