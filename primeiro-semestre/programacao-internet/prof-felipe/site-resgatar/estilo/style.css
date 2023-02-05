@@ -23,8 +23,9 @@ header {
 :root {
     --cor0:white;
     --cor1:#f2e4a3;
-    --cor2:#ffc7c8;
     --cor1-1:#F4D85A;
+    --cor2:#ffc7c8;
+    --cor2-2:#FF7A7D;
     --cor3:#bcf7f3;
     --cor4:#534842;
     --cor5:#27221f;
@@ -46,15 +47,14 @@ body {
 #cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor1-1));
     padding: 10px;
 }
 
 #logo-header {
-    width: 50%;
-    text-align: center;    
+    width: 50%;    
 }
 
 #logo-header a {
@@ -144,4 +144,24 @@ footer {
     position: absolute;
     flex-direction: row;
     padding-top: 10px;
+}
+
+.botoes-footer button {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(45deg, var(--cor2), var(--cor2-2));
+    border-radius: 8px;
+    border-width: 1px;
+    color: var(--cor0);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+button i {
+    font-size: 25px;
 }
