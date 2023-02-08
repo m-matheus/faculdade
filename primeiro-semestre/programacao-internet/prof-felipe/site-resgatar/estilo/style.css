@@ -96,11 +96,11 @@ main {
 
 main a {
     text-decoration: none;
-    color: var(--cor2-2);
+    color: var(--cor4);
     font-weight: bold;
 }
 main a:hover {
-    color: var(--cor2);
+    color: var(--cor2-2);
 }
 .subtitulo-home {
     margin: auto;
@@ -181,4 +181,8 @@ button i {
 
 button a {
     color: var(--cor0);
+}
+
+.botoes-footer button:hover {
+    background-image: linear-gradient(45deg, var(--cor4), var(--cor5));
 }
