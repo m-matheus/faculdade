@@ -29,6 +29,7 @@ header {
     --cor3:#bcf7f3;
     --cor4:#534842;
     --cor5:#27221f;
+    --corFundoTransp: #bcf7f362;
 
     --fontePadrao: 'Poppins', sans-serif;
     --fonteDestaque: 'Noto Serif Ahom', serif;
@@ -96,12 +97,19 @@ main {
 
 main a {
     text-decoration: none;
-    color: var(--cor4);
+    color: var(--cor2-2);
     font-weight: bold;
 }
 main a:hover {
-    color: var(--cor2-2);
+    color: #ff494c;
+    text-decoration: underline;
 }
+main p {
+    padding: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
 .subtitulo-home {
     margin: auto;
     text-indent: 30px;
@@ -127,7 +135,7 @@ main a:hover {
 .info {
     max-width: 700px;
     margin: auto;
-    background-color: var(--cor3);
+    background-color: var(--corFundoTransp);
     border-radius: 25px 0px 25px 0px;
     font-size: 1.1em;
     margin-top: 35px;
@@ -175,12 +183,22 @@ footer p {
     margin-bottom: 10px;
 }
 
+button {
+    border: none;
+
+}
+
 button i {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 button a {
     color: var(--cor0);
+    align-items: center;
+    align-content: center;
+}
+button a:hover {
+    color: var(--cor2-2);
 }
 
 .botoes-footer button:hover {

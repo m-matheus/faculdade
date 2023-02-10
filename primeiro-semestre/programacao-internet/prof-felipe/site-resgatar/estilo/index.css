@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media screen and (max-width: 800px) {   
+header {
+        flex-direction: column;
+}
+
+.img-auxiliar {
+        display: none;
+}
+
+.info {
+        width: 450px;
+        padding: 10px;
+        line-height: 45px;
+}
+
+}
+
+
+:root {
+    --cor0:white;
+    --cor1:#f2e4a3;
+    --cor1-1:#F4D85A;
+    --cor2:#ffc7c8;
+    --cor2-2:#FF7A7D;
+    --cor3:#bcf7f3;
+    --cor4:#534842;
+    --cor5:#27221f;
+    --corFundoTransp: #bcf7f362;
+
+    --fontePadrao: 'Poppins', sans-serif;
+    --fonteDestaque: 'Noto Serif Ahom', serif;
+    --fonteTitulos: 'Roboto', sans-serif;
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fontePadrao);
+}
+
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor1-1));
+    padding: 10px;
+}
+
+#logo-header {
+    width: 50%;    
+}
+
+#logo-header a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-family: var(--fonteDestaque);
+    font-size: 1.2em;
+
+}
+
+#nav-header a {
+    padding-right: 30px;
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+}
+#nav-header a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+    position: absolute;
+    top: 22px;
+    left: 1px;
+    transition: width 0.5s;
+    border-radius: 5px;
+}
+#nav-header a:hover::after {
+    width: 35px;
+}
+
+main {
+    background: white url('../imagens/fundo.png') no-repeat fixed center;
+    background-size: cover;
+    height: 1100px;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor2-2);
+    font-weight: bold;
+}
+main a:hover {
+    color: #ff494c;
+    text-decoration: underline;
+}
+.subtitulo-home {
+    margin: auto;
+    text-indent: 30px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    align-items: center;
+}
+.bv-resgatar  h1{
+    font-family: var(--fonteTitulos);
+    font-size: 4em;
+    line-height: 50px;
+}
+.bv-resgatar h2 {
+    font-family: var(--fontePadrao);
+    font-size: 1.2em;
+    text-indent: 10px;
+}
+
+.info {
+    max-width: 700px;
+    margin: auto;
+    background-color: var(--corFundoTransp);
+    border-radius: 25px 0px 25px 0px;
+    font-size: 1.1em;
+    margin-top: 35px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.527);
+}
+.lista-home {
+    list-style: circle;
+    list-style-position: inside;
+}
+.lista-home li{
+    margin: auto;
+    max-width: 600px;
+    padding-top: 30px;
+}
+
+
+footer {
+    background-color: var(--cor1-1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.514);
+    color: var(--cor5);
+    text-align: center;
+    bottom: -200;
+    top: 1200px;
+    width: 100%;
+    position: absolute;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.botoes-footer button {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(45deg, var(--cor2), var(--cor2-2));
+    border-radius: 8px;
+    border-width: 1px;
+    color: var(--cor0);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+
+}
+
+button i {
+    font-size: 30px;
+}
+
+button a {
+    color: var(--cor0);
+    align-items: center;
+    align-content: center;
+}
+button a:hover {
+    color: var(--cor2-2);
+}
+
+.botoes-footer button:hover {
+    background-image: linear-gradient(45deg, var(--cor4), var(--cor5));
+}
