@@ -153,34 +153,49 @@ main a:hover {
 }
 
 form {
-    width: 500px;
+    width: 80%;
     margin: auto;
     text-align: center;
     padding: 20px;
+    font-family: var(--fontePadrao);
+}
+
+form h2 {
+    color: var(--cor5);
 }
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid gray;
+    border: 1px solid var(--cor4);
     border-radius: 5px;
+    color: var(--cor2-2);
+    font-weight: bold;
 }
 
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: green;
-    color: white;
+    background-color: var(--cor2-2);
+    color: var(--cor0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 input[type="submit"]:hover {
-    background-color: lightgreen;
+    background-color: var(--cor5);
+    color: var(--cor2-2);
+}
+
+@media (max-width: 576px) {
+    form {
+      width: 95%;
+    }
 }
 
 
