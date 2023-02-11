@@ -136,3 +136,5 @@ justify-content:
 flex-direction: 
 align-itens:
 box-sizing: border-box;
+
+Para centralizar completamente um elemento dentro do outro (vertical e horizontalmente), o primeiro passo é configurar um posicionamento especial do elemento interno usando a declaração CSS "position: absolute", seguida pelas propriedades "top: 50%" e "left: 50%". Em seguida, use a propriedade "transform: translate(-50%, -50%)" para ajustar a posição do elemento interno para que ele fique completamente centralizado dentro do elemento externo.
