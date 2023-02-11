@@ -100,16 +100,15 @@ main a {
     color: var(--cor2-2);
     font-weight: bold;
 }
-main a:hover {
-    color: #ff494c;
-    text-decoration: underline;
-}
 main p {
     padding: 20px;
     text-align: justify;
     line-height: 2;
 }
-
+main a:hover {
+    color: #ff494c;
+    text-decoration: underline;
+}
 .subtitulo-home {
     margin: auto;
     text-indent: 30px;
@@ -141,7 +140,7 @@ main p {
     margin-top: 35px;
     padding-bottom: 70px;
     padding-top: 30px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.527);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.288);
 }
 .lista-home {
     list-style: circle;
@@ -151,6 +150,37 @@ main p {
     margin: auto;
     max-width: 600px;
     padding-top: 30px;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: lightgreen;
 }
 
 
@@ -202,3 +232,4 @@ button a:hover {
 .botoes-footer button:hover {
     background-image: linear-gradient(45deg, var(--cor4), var(--cor5));
 }
+
