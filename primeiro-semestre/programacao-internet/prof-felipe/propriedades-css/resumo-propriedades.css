@@ -23,7 +23,7 @@
     /*background-position: center top; /*Define a posição da imagem carregada no centro colada no topo*/
     /*background-position: center bottom; /*Define a posição da imagem carregada no centro colada na base*/
     
-/*background: color > image > reapeat > attachment > position */
+/* background: color > image > position > repeat > [size: n funciona] > attachment
 
 /*border-style: solid; /*Define uma borda solida*/
     /*border-style: dotted; /*Define uma borda com pontos*/
