@@ -23,7 +23,6 @@ header {
 
 }
 
-
 :root {
     --cor0:white;
     --cor1:#f2e4a3;
@@ -47,7 +46,6 @@ header {
 body {
     font-family: var(--fontePadrao);
 }
-
 
 #cabecalho {
     display: flex;
@@ -198,6 +196,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: var(--cor5);
     color: var(--cor2-2);
+}
+
+input, textarea:focus {
+    outline: none;
 }
 
 @media (max-width: 576px) {
