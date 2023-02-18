@@ -148,7 +148,7 @@ main a:hover {
     list-style: circle;
     list-style-position: inside;
 }
-.lista-home li{
+.lista-home > li{
     margin: auto;
     max-width: 600px;
     padding-top: 30px;
@@ -207,6 +207,48 @@ input, textarea:focus {
       width: 95%;
     }
 }
+
+.card {
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+  }
+  
+.card img {
+    max-width: 100%;
+  }
+  
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+.card li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+.card .botao-doe {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--cor2-2);
+    color: var(--cor0);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.botao-doe:hover {
+    background-color: var(--cor5);
+    color: var(--cor2-2);
+  }
+
+
 
 
 footer {
