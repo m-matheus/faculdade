@@ -23,7 +23,7 @@
     }
 
     .info {
-    width: 300px;
+    width: 450px;
     padding: 8px;
     line-height: 45px;
     }
@@ -33,8 +33,20 @@
     }
 
     #mapa {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #mapa {
         width: 250px;
     }
+
+    .info {
+        width: 350px;
+        padding: 8px;
+        line-height: 45px;
+        }
 }
 
 :root {
