@@ -3,24 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @media screen and (max-width: 845px) {   
-header {
+    header {
     flex-direction: column;
-}
+    align-items: center;
+    align-content: center;
+    }
 
-.img-auxiliar {
+    #logo-header img {
+        width: 100%;
+    }
+
+    #nav-header {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .img-auxiliar {
     display: none;
-}
+    }
 
-.info {
-    width: 450px;
-    padding: 10px;
+    .info {
+    width: 300px;
+    padding: 8px;
     line-height: 45px;
-}
+    }
 
-#gato-deus {
+    #gato-deus {
     display: none;
-}
+    }
 
+    #mapa {
+        width: 250px;
+    }
 }
 
 :root {
@@ -261,6 +275,7 @@ input, textarea:focus {
 #mapa {
     display: flex;
     margin-bottom: 20px;
+    max-width: 350px;
 }
 
 footer {
