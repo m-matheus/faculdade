@@ -14,8 +14,7 @@
     }
 
     #nav-header {
-        font-size: 13px;
-        margin-top: 10px;
+        font-size: 16px;
     }
 
     .img-auxiliar {
@@ -40,6 +39,11 @@
 @media screen and (max-width: 500px) {
     #mapa {
         width: 250px;
+    }
+
+    #nav-header {
+        font-size: 12px;
+        margin-top: 10px;
     }
 
     .info {
