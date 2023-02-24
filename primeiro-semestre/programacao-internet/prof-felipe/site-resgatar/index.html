@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ResGatar</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <!-- link dos estilos, chamando o arquivo css -->
     <link rel="shortcut icon" href="./imagens/gatinho-favicon.ico" type="image/x-icon">
+    <!-- link para o favicon (imagem que fica em cima do lado o titulo do site na aba) -->
     <script src="https://kit.fontawesome.com/dd698aa939.js" crossorigin="anonymous"></script>
+    <!-- script dos icons das redes sociais do fontawesome -->
 </head>
-<body>
-    
-    <header id="cabecalho">
+<body> 
+
+    <header id="cabecalho"> 
+        <!-- 
+            Header é a tag semantica usada para criar cabeçalhos
+         -->
         <div id="logo-header">
             <a href="index.html"><img src="imagens/logo-300.png" alt="logo três gatinhos"></a>
-        </div>
+        </div> 
         <nav id="nav-header">
             <a href="index.html">Home</a>
             <a href="about-us.html">Sobre nós</a>
             <a href="doe.html">Contribua</a>
             <a href="contato.html">Contato</a>
-        </nav>
+        </nav> 
+        <!-- 
+            Dentro do header foi criado duas div's, para uma div que contem uma imagem (logo dos gatinhos), e uma div semantica chamda nav (contendo os links do menu)
+         -->
     </header>
-    
 
     <main>
         <section class="conteudo-principal">
@@ -34,6 +42,11 @@
             <article class="img-auxiliar" >
                 <img src="imagens/gatinho-ruivo-400.png" alt="gato ruivo" id="gatinho-ruivo">
             </article>
+        <!-- 
+            Section que agruda dois articles, usados para dividir um espaço do site ao meio.
+            Usei isso para fazer a parte "inicial", de boas vindas do site.
+            Dentro de um dos articles, contem: um h2, um h1 e um p, e no outro uma imagem.
+         -->
         </section>
         <section class="info">
             <h3 class="subtitulo-home">É novo por aqui?</h3>
@@ -48,10 +61,12 @@
                     Em caso de dúvidas, fique a vontade para nos contatar a qualquer momento, <a href="contato.html">clicando aqui</a>.
                 </li>
             </ul>
+            <!-- 
+                Essa outra secction é basicamente o conteudo da pagina home, onde orienta o usario as possibilidades das outras paginas.
+             -->
         </section>
+        <!-- Todas as sections estão dentro do nosso conteudo "main", onde foi usado a tag semantica main.-->
     </main>
-
-
 
     <footer>
         <p>Site desenvolvido por <strong>Matheus Moraes</strong>.</p>
@@ -59,8 +74,14 @@
             <button class="rede-social"><a href="https://instagram.com/matheusdemoraez/" target="_blank"><i class="fa-brands fa-instagram"></a></i></button>
             <button class="rede-social"><a href="https://github.com/m-matheus" target="_blank"><i class="fa-brands fa-github"></i></a></button>
         </div>
+        <!-- 
+            O footer é o nosso rodape, nele colocamos apenas um paragrafo dando a autoria do site, e botões de rede social. Dentro dos botões temos uma âncora (link), e o icone, que está linkado o fontawesome.
+         -->
     </footer>
 
     <script src="script/home.js"></script>
+    <!-- 
+        Esse é o link do script do javascript da página.
+     -->
 </body>
 </html>

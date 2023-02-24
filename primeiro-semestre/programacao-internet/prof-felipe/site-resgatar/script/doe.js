@@ -1,7 +1,9 @@
 const doacaoFinanceira = document.querySelector("#financeira");
 const cardFinanceira = document.querySelector("#card-financeira");
 const hidenFinanceira = document.querySelector("#hiden-financeira");
-
+/* 
+  Criando as constantes para selecionar com base no seletor css usando queryselector.
+*/
 
 doacaoFinanceira.addEventListener("click", function(event) {
     cardFinanceira.style.display = 'block';
@@ -11,6 +13,10 @@ hidenFinanceira.addEventListener("click", function(event) {
     cardFinanceira.style.display = 'none';
 })
 
+/* 
+  Usamos o evento click para modificar a estilização do card para ele aparecer.
+  Também usamos o click para fechar o mesmo.
+*/
 
 const doacaoProdutos = document.querySelector("#produtos");
 const cardProdutos = document.querySelector("#card-produtos");

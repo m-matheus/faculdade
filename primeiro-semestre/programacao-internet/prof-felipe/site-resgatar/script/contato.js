@@ -4,14 +4,26 @@ var emailInput = document.getElementById("email");
 var mensagemInput = document.getElementById("mensagem");
 var enviarSubmit = document.getElementById("enviar");
 
+/* 
+  criando variaveis de seleção de pelo id, assim poderemos modificar nosso formulario
+*/
+
 nomeInput.addEventListener("focus", function() {
   nomeInput.style.border = "3px solid #27221f";
 });
+
+/* 
+  Usando focus para quando clicar no campo de nome, ele aumente sua borda
+*/
 
 nomeInput.addEventListener("focusout", function() {
   nomeInput.style.border = "1px solid #27221f";
   nomeInput.style.backgroundColor = "white";
 });
+
+/* 
+  Usado para diminuir a borda e colocar um backgroundcolor branco ao clicar fora do campo
+*/
 
 nomeInput.addEventListener("click", function() {
     nomeInput.style.backgroundColor = "#ffc7c8";

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+/* 
+    Aqui está o link de importação das fontes usadas no site.
+*/
 @media screen and (max-width: 845px) {   
     header {
     flex-direction: column;
@@ -34,6 +36,11 @@
     #mapa {
         width: 350px;
     }
+    /* 
+        Aqui está a estilização de responsividade do site, que começa apartir dos 845px.
+        Nele nós alteramos o Header para que a imagem e o menu, fique um abaixo do outro, também diminuimos a font do menu, tiramos a visibilidade do gato laranja e diminuimos o tamnho do conteudo "main".
+        Tiramos a imagem do gato-deus, que está na pagina about-us e diminuimos o tamanho do mapa que está no contato. Fazendo o site "caber" em telas menores.
+    */
 }
 
 @media screen and (max-width: 500px) {
@@ -50,7 +57,10 @@
         width: 350px;
         padding: 8px;
         line-height: 45px;
-        }
+    }
+    /* 
+        Essa estilização é para quando usamos telas ainda menores, criei ela, pois ao tentar abrir o site no meu celular ele estava ficando com o ultimo item do menu em baixo dos demais.
+    */
 }
 
 :root {
@@ -67,14 +77,23 @@
     --fontePadrao: 'Poppins', sans-serif;
     --fonteDestaque: 'Noto Serif Ahom', serif;
     --fonteTitulos: 'Roboto', sans-serif;
+    /* 
+        Criei essas regras, para facilitar a modificação posterior das cores, fontes do site, dessa forma, posso simplesmente mudar aqui, que será mudado em todos lugares que usam a regra.
+    */
 }
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    /* 
+        Usei essas regras gerais, para que por padrão, nada tenha margem, nem padding, e usamos o box-sizing para que apesar de eu colocar alguma margem/padding, o tamanho total do elemento não seja modificado.
+    */
 }
 body {
     font-family: var(--fontePadrao);
+    /* 
+        Fonte padrão da parte "body" do site. Essa fonte está na regra que foi criada acima.
+    */
 }
 
 #cabecalho {
@@ -84,10 +103,17 @@ body {
     width: 100%;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor1-1));
     padding: 10px;
+    /* 
+        Estilizado com display=flex para poder estilizar de forma mais facil os seus "filhos", no caso a logo com o menu. Usado align-items e justify-content para alinha-los e criar um espaço entre eles, respectivamente.
+        Além disso, foi apenas colocado um fundo com gradiente, usando cores da regra, e um padding para o conteudo não ficar grudado nas bordas.
+    */
 }
 
 #logo-header {
-    width: 50%;    
+    width: 50%;  
+    /* 
+        Usado para que a div#logo-header, que está a logo mantenha sempre 50% da largura do cabeçalho.
+    */ 
 }
 
 #logo-header a {
@@ -95,7 +121,9 @@ body {
     color: var(--cor5);
     font-family: var(--fonteDestaque);
     font-size: 1.2em;
-
+    /* 
+        Estilização das âncoras que estão no #logo-header, retirando o "sublinado" com o text-decoration, mudando a cor para a cor5 da regra, a fonte e o tamanho
+    */
 }
 
 #nav-header a {
@@ -105,6 +133,9 @@ body {
     font-weight: bold;
     font-size: 1.2em;
     position: relative;
+    /* 
+        Estilizando as âncoras do #nav-header (menu) dando padding-right para que elas tenham uma distancia uma da outra, cor de texto, retirando o sublinhado, mudando o tamanho da fonte, e usando posição relativa para que ela fique em sua posição original, sem afetar o posicionamento de outros elementos da página (usado para que possamos fazer o efeito da barrinha no hover)
+    */
 }
 #nav-header a::after {
     content: " ";
@@ -116,15 +147,24 @@ body {
     left: 1px;
     transition: width 0.5s;
     border-radius: 5px;
+    /* 
+        Estilização dos links do menu ao passar o mouse por cima, usando o position absolute, com top e left, para fazer o efeito da barrinha ao passar o mouse por cima.
+    */
 }
 #nav-header a:hover::after {
     width: 35px;
+    /* 
+        largura final da barrinha, usado after para que ela cresça após o link ser selecionado.
+    */
 }
 
 main {
     background: white url('../imagens/fundo.png') no-repeat fixed center;
     background-size: cover;
     padding-bottom: 100px;
+    /* 
+        Estiliza;'ao da imagem de fundo, usando propriedades background para dar um efeito de "paralax"
+    */
 }
 
 main a {
@@ -144,6 +184,9 @@ main a:hover {
 .subtitulo-home {
     margin: auto;
     text-indent: 30px;
+    /* 
+        text-ident usado para dar uma "margem" no primeiro paragrafo do texto
+    */
 }
 
 .conteudo-principal {
@@ -177,6 +220,9 @@ main a:hover {
 .lista-home {
     list-style: circle;
     list-style-position: inside;
+    /* 
+        Estilizando as "bolinhas" da lista e fazendo com que elas fiquem dentro do conteudo, e não fiquem vazando para fora
+    */
 }
 .lista-home > li{
     margin: auto;
@@ -238,6 +284,10 @@ input, textarea:focus {
     }
 }
 
+/* 
+    Estilizando de todo o formulário, mudando apenas coisas simples, como background-color, font, color, adicionando/modificando bordas etc.
+*/
+
 .doacao {
     border: none;
     background-color: transparent;
@@ -245,6 +295,9 @@ input, textarea:focus {
     cursor: pointer;
     font-family: var(--fonteTitulos);
     font-size: 1.1em;
+    /* 
+        cursor pointer para ao passar o mous epor cima aparecer a "mãozinha", background-color transparente para que fique sem fundo.
+    */
 }
 
 .card {
@@ -255,6 +308,9 @@ input, textarea:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: white;
+    /* 
+        Display none para o card ficar oculto. (usamos o javascript para poder faze-lo aparecer.
+    */
   }
   
 .card img {
