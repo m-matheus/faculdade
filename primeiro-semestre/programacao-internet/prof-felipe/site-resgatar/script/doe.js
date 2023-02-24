@@ -4,12 +4,10 @@ const hidenFinanceira = document.querySelector("#hiden-financeira");
 
 
 doacaoFinanceira.addEventListener("click", function(event) {
-    event.preventDefault();
     cardFinanceira.style.display = 'block';
   });
 
 hidenFinanceira.addEventListener("click", function(event) {
-    event.preventDefault();
     cardFinanceira.style.display = 'none';
 })
 
@@ -20,12 +18,10 @@ const hidenProdutos = document.querySelector("#hiden-produtos");
 
 
 doacaoProdutos.addEventListener("click", function(event) {
-    event.preventDefault();
     cardProdutos.style.display = 'block';
   });
 
 hidenProdutos.addEventListener("click", function(event) {
-    event.preventDefault();
     cardProdutos.style.display = 'none';
 })
 
@@ -35,12 +31,10 @@ const hidenTempo = document.querySelector("#hiden-tempo");
 
 
 doacaoTempo.addEventListener("click", function(event) {
-    event.preventDefault();
     cardTempo.style.display = 'block';
   });
 
 hidenTempo.addEventListener("click", function(event) {
-    event.preventDefault();
     cardTempo.style.display = 'none';
 })
 
@@ -50,11 +44,9 @@ const hidenAdocao = document.querySelector("#hiden-adocao");
 
 
 doacaoAdocao.addEventListener("click", function(event) {
-    event.preventDefault();
     cardAdocao.style.display = 'block';
   });
 
 hidenAdocao.addEventListener("click", function(event) {
-    event.preventDefault();
     cardAdocao.style.display = 'none';
 })

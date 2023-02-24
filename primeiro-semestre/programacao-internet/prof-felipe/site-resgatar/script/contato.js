@@ -35,7 +35,7 @@ mensagemInput.addEventListener("focus", function() {
   mensagemInput.style.border = "3px solid #27221f";
 });
 
-mensagemInput.addEventListener("focusout", function() {
+mensagemInput.addEventListener("blur", function() {
   mensagemInput.style.border = "1px solid #27221f";
   mensagemInput.style.backgroundColor = "white";
 });
@@ -45,7 +45,6 @@ mensagemInput.addEventListener("click", function() {
   });
 
 enviarSubmit.addEventListener("submit", function(event) {
-  event.preventDefault();
-  
+  event.preventDefault(); // impede o envio do formulário
   formulario.reset();
 });
