@@ -51,12 +51,19 @@ mensagemInput.addEventListener("blur", function() {
   mensagemInput.style.border = "1px solid #27221f";
   mensagemInput.style.backgroundColor = "white";
 });
+/* 
+  Usado para diminuir a borda e colocar um backgroundcolor branco ao clicar fora do campo
+*/
 
 mensagemInput.addEventListener("click", function() {
     mensagemInput.style.backgroundColor = "#ffc7c8";
   });
 
 enviarSubmit.addEventListener("submit", function(event) {
-  event.preventDefault(); // impede o envio do formulário
+  event.preventDefault(); // impede o envio do formulário sem completar os campos
   formulario.reset();
+
+  /* 
+    Usado para enviar informações do formulario
+  */
 });

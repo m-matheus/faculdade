@@ -16,3 +16,10 @@ gatoLaranja.addEventListener("mouseout", function(event) {
 /* 
   Modificando o tamanho do gato ao normal ao tirar o mouse
 */
+
+var texto = document.getElementsByTagName("p");
+
+texto[0].innerHTML = "O maior site de <strong>miaudoção</strong> de Poa e região!";
+/* 
+  Modificando o texto que está no "p"
+*/
